@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>agro_ram_order</title>
+    <mata charset="utf-8"></mata>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="cocoa_maincontentgridview.css" />
+    <link rel="stylesheet" href="click1.css" />
+    <style>
+      ul {
+        list-style-type: none;
+        background-image: linear-gradient(green, whitesmoke, green);
+        overflow: hidden;
+        padding: 10px;
+        height: 50px;
+      }
+
+      li {
+        color: whitesmoke;
+        text-align: center;
+        float: left;
+        padding: 10px;
+        margin-top: 0px;
+      }
+
+      li:hover {
+        color: floralwhite;
+      }
+      a:hover {
+        color: whitesmoke;
+        text-decoration: none;
+        border-radius: 1px 8px 13px 4px;
+        background-color: darkgreen;
+        padding: 10px;
+        width: 10px;
+        height: 15px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        border-radius: 0px 8px 6px 10px;
+        background: whitesmoke;
+        padding: 10px;
+        width: 10px;
+        height: 10px;
+        font-size: 15px;
+      }
+
+      .r {
+        float: right;
+      }
+      .motto {
+        margin-top: 0;
+        text-align: center;
+      }
+      .logo {
+        font-size: 60px;
+        text-align: center;
+      }
+      .homecontent {
+        align-content: flex-end;
+      }
+
+      .mc {
+        margin-bottom: 40px;
+        margin-left: 220px;
+        margin-right: 220px;
+        background-color: ghostwhite;
+      }
+
+      .footer {
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      <link
+        rel="stylesheet"
+        href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        > <style
+        > body {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+        color: azure;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      .Notice {
+        text-align: center;
+        color: orange;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .btn {
+        background-color: orange;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+
+      .btn:hover {
+        background-color: orangered;
+      }
+
+      .k {
+        color: grey;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+          width: 100%;
+        }
+      }
+      h3 {
+        float: left;
+        padding: 11.3px;
+      }
+
+      .bimg {
+        background-image: url(cocoa2.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-filter: grayscale(70%);
+        filter: grayscale(20%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <span style="color: blue">C</span
+        ><img src="connect.jpg" width="30px" height="30px" /><span
+          style="color: orange"
+          >n</span
+        ><span style="color: darkgoldenrod">n</span
+        ><span style="color: darkgreen">e</span
+        ><span style="color: darkgrey">c</span
+        ><span style="color: blue">t</span>
+        <span style="color: darkgoldenrod">A</span
+        ><span style="color: darkgreen">g</span
+        ><span style="color: darkgrey">r</span><span style="color: blue">o</span
+        ><img src="nigeria1.jfif" width="15px" height="15px" />
+      </div>
+      <div class="motto">
+        <p>
+          <i
+            >...specialise in linking sellers to buyers within Nigeria and
+            <br />provide interface for related sevices...</i
+          >
+        </p>
+      </div>
+    </div>
+    <div class="bimg">
+      <div class="list">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">COCOA </a></li>
+          <li><a href="">CASHEW </a></li>
+          <li><a href="">SOYA BEANS</a></li>
+          <li><a href="">DRIED MAIZE</a></li>
+          <li><a href="">CASSAVA</a></li>
+          <li><a href="">RICE</a></li>
+          <li><a href="">BEANS</a></li>
+          <li><a href="">WHEAT</a></li>
+          <li class="r"><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>

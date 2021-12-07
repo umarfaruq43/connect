@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.p {
+  width: 75%;
+  float: left;
+  border: 1px solid black;
+  padding: 112px;
+  background-size: cover;
+
+}
+
+.q {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid black;
+}
+.w{
+    list-style-type: circle
+}

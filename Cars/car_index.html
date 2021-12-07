@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>c_cars</title>
+    <mata charset="utf-8"></mata>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+   <link rel="stylesheet" href="car_maincontentgridview.css">
+     <link rel="stylesheet" href="click1.css">
+    <style>
+          ul{ 
+            list-style-type: none;
+             background-image: linear-gradient(orange, black, green);
+             overflow: hidden;
+              padding:10px;
+              height: 50px;
+          }
+    
+        li{ 
+            color:whitesmoke;
+            text-align: center;
+            float:left;
+            padding:10px;
+            margin-top: 0px;
+            
+         }
+       
+  li:hover{
+            
+            color: floralwhite;    
+           }
+       .z:hover{
+            color:whitesmoke;
+            text-decoration: none;
+             border-radius: 1px 8px 13px 4px;
+              background-color:darkgreen;
+              padding: 10px; 
+              width: 10px;
+              height: 15px;
+            font-size: 16.5px;
+        }
+         .z{
+            color:black;
+            text-decoration: none;
+              border-radius: 0px 8px 6px 10px;
+              background:whitesmoke;
+              padding: 10px; 
+              width: 10px;
+              height: 10px; 
+             font-size: 15px;
+            }
+        
+        .r{
+            float:right;
+        }
+        .motto{
+            margin-top: 0;
+            text-align: center;
+        }
+         .logo{
+             font-size: 60px;
+            text-align: center;
+        }
+        .homecontent{
+            align-content: flex-end;
+           
+        }
+        iframe{
+            
+            width: 200px;
+            height:8800px;
+        }
+        .mc{margin-bottom: 40px;
+            margin-left: 220px;
+            margin-right: 220px;
+            background-color:ghostwhite;
+        }
+        * {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+
+.menu ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: ghostwhite;
+  padding: 15px;
+  color: darkolivegreen;
+  text-align: center;
+  font-size: 14px;
+ 
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width:25%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+        h3{ float:left;
+            padding:11.3px;
+        }
+             div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 110px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  float: left;
+  width: 100%;
+  height:70px;
+}
+
+       
+        
+div.desc {
+  padding: 9px;
+  text-align: center;
+}
+  
+        
+        /*slide show*/
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides, {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  background-image: linear-gradient(orange, black, orange);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  font-size: 21px;
+  background-image: linear-gradient(green,black, orange);
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: orangered;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+ background-image: linear-gradient(orange, black, orange);
+  padding: 2px 16px;
+  color: white;
+}
+
+.gs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+ 
+        .img-text-block {
+  position: absolute;
+  bottom:29%;
+  right: 25.5%;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.2);
+}
+    .ictprice,.ictheader{
+        margin-top: auto;
+        text-align: center;
+    }
+    .ictheader{
+        font-size: 23px;
+    }
+    .ictprice{
+        padding-top:0;
+        font-size: 20px;
+    }
+    .ictbutton{
+          background-image: linear-gradient(orange, black, orange);
+        font-size: 20px;
+    }
+    .ictblink{
+        text-decoration: none;
+        color: white;
+    }
+          .ictblink:hover{
+        font-size: 21px;
+     }
+         .ictbutton:hover{
+        background-image: linear-gradient(green, black, orange);
+     }
+
+</style>
+</head>
+
+
+<body>
+        <div class="header">
+            <div class="logo"> 
+               <span style="color:blue">C</span><img src="connect.jpg" width="30px" height="30px"><span style="color:orange">n</span><span style="color:darkgoldenrod">n</span><span style="color:darkgreen">e</span><span style="color:darkgrey">c</span><span style="color:blue">t</span> <span style="color:darkgoldenrod">C</span><span style="color:darkgreen">a</span><span style="color:darkgrey">r</span><span style="color:blue">s</span><img src="nigeria1.jfif" width="15px" height="15px">
+           </div>
+            <div class="motto">
+                 <p><i>...specialise in linking sellers to buyers within Nigeria and <br>provide interface for related sevices...</i></p>    
+            </div>
+        </div>
+        <div class="list"> 
+          <ul>
+              <li><a class="z" href="agro_index.html" target="_parent">HOME</a></li>
+              <li><a class="z" href="TOYOTA/TOYOTA_index.html" target="_parent">TOYOTA</a></li>
+              <li><a class="z" href="LEXUS/lexus_index.html" target="_parent">LEXUS</a></li>
+              <li><a class="z" href="BENZ/BENZ_index.html" target="_parent">BENZ</a></li>
+              <li><a class="z" href="HONDA/HONDA_index.html" target="_parent">HONDA</a></li>
+              <li><a class="z" href="MAZDA/MAZDA_index.html" target="_parent">MAZDA</a></li>
+              <li><a class="z" href="KIA/KIA_index.html">KIA</a></li>
+              <li><a class="z" href="FORD/FORD_index.html" target="_parent">FORD</a></li>
+              <li><a class="z" href="NISSAN/NISSAN_index.html" target="_parent">NISSAN</a></li>
+               <li><a class="z" href="RANGE/RANGE_index.html" target="_parent">RANGE</a></li>
+              <li><a class="z" href="">OTHER</a></li>
+              <li class="r"><a class="z" href="">CONTACT</a></li> 
+           </ul> 
+        </div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <iframe src="car_content.html"></iframe>
+  </div>
+<div>  
+<div class="col-6">
+       <div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="lf1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="LEXUS/lexus_index.html">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demo cursor" src="lf1.jfif" style="width:100%" onclick="currentSlide(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlide(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlide(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlide(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lrug.jfif" style="width:100%" onclick="currentSlide(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="lside.jfif" style="width:100%" onclick="currentSlide(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+   </div>    
+  
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+  <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+ </div> 
+<div class="col-6">
+       <div class="container">
+  <div class="mySlidesC">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesC">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesC">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesC">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesC">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesC">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesC(-1)">❮</a>
+  <a class="next" onclick="plusSlidesC(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionC"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoC cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideC(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoC cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideC(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoC cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideC(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoC cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideC(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoC cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideC(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoC cursor" src="lside.jfif" style="width:100%" onclick="currentSlideC(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexC = 1;
+showSlidesC(slideIndexC);
+
+function plusSlidesC(n) {
+  showSlidesC(slideIndexC += n);
+}
+
+function currentSlideC(n) {
+  showSlidesC(slideIndexC = n);
+}
+
+function showSlidesC(n) {
+  var i;
+  var slidesC = document.getElementsByClassName("mySlidesC");
+  var dotsC = document.getElementsByClassName("demoC");
+  var captionTextC = document.getElementById("captionC");
+  if (n > slidesC.length) {slideIndexC = 1}
+  if (n < 1) {slideIndexC = slidesC.length}
+  for (i = 0; i < slidesC.length; i++) {
+      slidesC[i].style.display = "none";
+  }
+  for (i = 0; i < dotsC.length; i++) {
+      dotsC[i].className = dotsC[i].className.replace(" active", "");
+  }
+  slidesC[slideIndexC-1].style.display = "block";
+  dotsC[slideIndexC-1].className += " active";
+  captionTextC.innerHTML = dotsC[slideIndexC-1].alt;
+}
+</script>
+
+   </div>         
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+  <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+<div class="col-6">
+       <div class="container">
+  <div class="mySlidesB">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesB">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesB">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesB">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesB">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesB">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesB(-1)">❮</a>
+  <a class="next" onclick="plusSlidesB(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionB"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoB cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideB(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoB cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideB(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoB cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideB(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoB cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideB(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoB cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideB(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoB cursor" src="lside.jfif" style="width:100%" onclick="currentSlideB(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexB = 1;
+showSlidesB(slideIndexB);
+
+function plusSlidesB(n) {
+  showSlidesB(slideIndexB += n);
+}
+
+function currentSlideB(n) {
+  showSlidesB(slideIndexB = n);
+}
+
+function showSlidesB(n) {
+  var i;
+  var slidesB = document.getElementsByClassName("mySlidesB");
+  var dotsB = document.getElementsByClassName("demoB");
+  var captionTextB = document.getElementById("captionB");
+  if (n > slidesB.length) {slideIndexB = 1}
+  if (n < 1) {slideIndexB = slidesB.length}
+  for (i = 0; i < slidesB.length; i++) {
+      slidesB[i].style.display = "none";
+  }
+  for (i = 0; i < dotsB.length; i++) {
+      dotsB[i].className = dotsB[i].className.replace(" active", "");
+  }
+  slidesB[slideIndexB-1].style.display = "block";
+  dotsB[slideIndexB-1].className += " active";
+  captionTextB.innerHTML = dotsB[slideIndexB-1].alt;
+}
+</script>
+
+   </div>    
+         
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+    <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+ 
+    <div class="col-6">
+      
+      <div class="container">
+  <div class="mySlidesD">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesD">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesD">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesD">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesD">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesD">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesD(-1)">❮</a>
+  <a class="next" onclick="plusSlidesD(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionD"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoD cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideD(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoD cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideD(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoD cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideD(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoD cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideD(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoD cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideD(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoD cursor" src="lside.jfif" style="width:100%" onclick="currentSlideD(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexD = 1;
+showSlidesD(slideIndexD);
+
+function plusSlidesD(n) {
+  showSlidesD(slideIndexD += n);
+}
+
+function currentSlideD(n) {
+  showSlidesD(slideIndexD = n);
+}
+
+function showSlidesD(n) {
+  var i;
+  var slidesD = document.getElementsByClassName("mySlidesD");
+  var dotsD = document.getElementsByClassName("demoD");
+  var captionTextD = document.getElementById("captionD");
+  if (n > slidesD.length) {slideIndexD = 1}
+  if (n < 1) {slideIndexD = slidesD.length}
+  for (i = 0; i < slidesD.length; i++) {
+      slidesD[i].style.display = "none";
+  }
+  for (i = 0; i < dotsD.length; i++) {
+      dotsD[i].className = dotsD[i].className.replace(" active", "");
+  }
+  slidesD[slideIndexD-1].style.display = "block";
+  dotsD[slideIndexD-1].className += " active";
+  captionTextD.innerHTML = dotsD[slideIndexD-1].alt;
+}
+</script>
+
+   </div> <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+ <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+   <div class="col-6">
+       <div class="container">
+  <div class="mySlidesE">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesE">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesE">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesE">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesE">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesE">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesE(-1)">❮</a>
+  <a class="next" onclick="plusSlidesE(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionE"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoE cursor" src="benz2.jfif" style="width:100%" onclick="currentSlide(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoE cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideE(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoE cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideE(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoE cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideE(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoE cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideE(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoE cursor" src="lside.jfif" style="width:100%" onclick="currentSlideE(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexE = 1;
+showSlidesE(slideIndexE);
+
+function plusSlidesE(n) {
+  showSlidesE(slideIndexE += n);
+}
+
+function currentSlideE(n) {
+  showSlidesE(slideIndexE = n);
+}
+
+function showSlidesE(n) {
+  var i;
+  var slidesE = document.getElementsByClassName("mySlidesE");
+  var dotsE = document.getElementsByClassName("demoE");
+  var captionTextE = document.getElementById("captionE");
+  if (n > slidesE.length) {slideIndexE = 1}
+  if (n < 1) {slideIndexE = slidesE.length}
+  for (i = 0; i < slidesE.length; i++) {
+      slidesE[i].style.display = "none";
+  }
+  for (i = 0; i < dotsE.length; i++) {
+      dotsE[i].className = dotsE[i].className.replace(" active", "");
+  }
+  slidesE[slideIndexE-1].style.display = "block";
+  dotsE[slideIndexE-1].className += " active";
+  captionTextE.innerHTML = dotsE[slideIndexE-1].alt;
+}
+</script>
+
+   </div>        
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+     <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+    <div class="col-6">
+       <div class="container">
+  <div class="mySlidesF">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesF">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesF">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesF">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesF">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesF">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesF(-1)">❮</a>
+  <a class="next" onclick="plusSlidesF(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionF"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoF cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideF(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoF cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideF(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoF cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideF(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoF cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideF(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoF cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideF(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoF cursor" src="lside.jfif" style="width:100%" onclick="currentSlideF(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexF = 1;
+showSlidesF(slideIndexF);
+
+function plusSlidesF(n) {
+  showSlidesF(slideIndexF += n);
+}
+
+function currentSlideF(n) {
+  showSlidesF(slideIndexF = n);
+}
+
+function showSlidesF(n) {
+  var i;
+  var slidesF = document.getElementsByClassName("mySlidesF");
+  var dotsF = document.getElementsByClassName("demoF");
+  var captionTextF = document.getElementById("captionF");
+  if (n > slidesF.length) {slideIndexF = 1}
+  if (n < 1) {slideIndexF = slidesF.length}
+  for (i = 0; i < slidesF.length; i++) {
+      slidesF[i].style.display = "none";
+  }
+  for (i = 0; i < dotsF.length; i++) {
+      dotsF[i].className = dotsF[i].className.replace(" active", "");
+  }
+  slidesF[slideIndexF-1].style.display = "block";
+  dotsF[slideIndexF-1].className += " active";
+  captionTextF.innerHTML = dotsF[slideIndexF-1].alt;
+}
+</script>
+
+   </div>       
+ <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+    <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+   <div class="col-6">
+       <div class="container">
+  <div class="mySlidesG">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesG">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesG">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesG">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesG">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesG">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesG(-1)">❮</a>
+  <a class="next" onclick="plusSlidesG(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionG"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoG cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideG(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoG cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideG(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoG cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideG(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoG cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideG(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoG cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideG(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoG cursor" src="lside.jfif" style="width:100%" onclick="currentSlideG(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexG = 1;
+showSlidesG(slideIndexG);
+
+function plusSlidesG(n) {
+  showSlidesG(slideIndexG += n);
+}
+
+function currentSlideG(n) {
+  showSlidesG(slideIndexG = n);
+}
+
+function showSlidesG(n) {
+  var i;
+  var slidesG = document.getElementsByClassName("mySlidesG");
+  var dotsG = document.getElementsByClassName("demoG");
+  var captionTextG = document.getElementById("captionG");
+  if (n > slidesG.length) {slideIndexG = 1}
+  if (n < 1) {slideIndexG = slidesG.length}
+  for (i = 0; i < slidesG.length; i++) {
+      slidesG[i].style.display = "none";
+  }
+  for (i = 0; i < dotsG.length; i++) {
+      dotsG[i].className = dotsG[i].className.replace(" active", "");
+  }
+  slidesG[slideIndexG-1].style.display = "block";
+  dotsG[slideIndexG-1].className += " active";
+  captionTextG.innerHTML = dotsG[slideIndexG-1].alt;
+}
+</script>
+
+   </div>        
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+ <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+     <div class="col-6">
+       <div class="container">
+  <div class="mySlidesH">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesH">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesH">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesH">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesH">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesH">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesH(-1)">❮</a>
+  <a class="next" onclick="plusSlidesH(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionH"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoH cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideH(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoH cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideH(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoH cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideH(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoH cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideH(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoH cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideH(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoH cursor" src="lside.jfif" style="width:100%" onclick="currentSlideH(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexH = 1;
+showSlidesH(slideIndexH);
+
+function plusSlidesH(n) {
+  showSlidesH(slideIndexH += n);
+}
+
+function currentSlideH(n) {
+  showSlidesH(slideIndexH = n);
+}
+
+function showSlidesH(n) {
+  var i;
+  var slidesH = document.getElementsByClassName("mySlidesH");
+  var dotsH = document.getElementsByClassName("demoH");
+  var captionTextH = document.getElementById("captionH");
+  if (n > slidesH.length) {slideIndexH = 1}
+  if (n < 1) {slideIndexH = slidesH.length}
+  for (i = 0; i < slidesH.length; i++) {
+      slidesH[i].style.display = "none";
+  }
+  for (i = 0; i < dotsH.length; i++) {
+      dotsH[i].className = dotsH[i].className.replace(" active", "");
+  }
+  slidesH[slideIndexH-1].style.display = "block";
+  dotsH[slideIndexH-1].className += " active";
+  captionTextH.innerHTML = dotsH[slideIndexH-1].alt;
+}
+</script>
+
+   </div>        
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+  <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+     <div class="col-6">
+       <div class="container">
+  <div class="mySlidesI">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesI">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesI">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesI">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesI">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesI">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesI(-1)">❮</a>
+  <a class="next" onclick="plusSlidesI(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionI"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoI cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideI(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoI cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideI(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoI cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideI(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoI cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideI(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoI cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideI(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoI cursor" src="lside.jfif" style="width:100%" onclick="currentSlideI(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexI = 1;
+showSlidesI(slideIndexI);
+
+function plusSlidesI(n) {
+  showSlidesI(slideIndexI += n);
+}
+
+function currentSlideI(n) {
+  showSlidesI(slideIndexI = n);
+}
+
+function showSlidesI(n) {
+  var i;
+  var slidesI = document.getElementsByClassName("mySlidesI");
+  var dotsI = document.getElementsByClassName("demoI");
+  var captionTextI = document.getElementById("captionI");
+  if (n > slidesI.length) {slideIndexI = 1}
+  if (n < 1) {slideIndexI = slidesI.length}
+  for (i = 0; i < slidesI.length; i++) {
+      slidesI[i].style.display = "none";
+  }
+  for (i = 0; i < dotsI.length; i++) {
+      dotsI[i].className = dotsI[i].className.replace(" active", "");
+  }
+  slidesI[slideIndexI-1].style.display = "block";
+  dotsI[slideIndexI-1].className += " active";
+  captionTextI.innerHTML = dotsI[slideIndexI-1].alt;
+}
+</script>
+
+   </div>         
+<div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+     <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+  <div class="col-6">
+       <div class="container">
+  <div class="mySlidesL">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesL">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesL">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesL">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesL">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesL">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesL(-1)">❮</a>
+  <a class="next" onclick="plusSlidesL(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionL"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoL cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideL(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoL cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideL(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoL cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideL(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoL cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideL(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoL cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideL(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoL cursor" src="lside.jfif" style="width:100%" onclick="currentSlideL(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexL = 1;
+showSlidesL(slideIndexL);
+
+function plusSlidesL(n) {
+  showSlidesL(slideIndexL += n);
+}
+
+function currentSlideL(n) {
+  showSlidesL(slideIndexL = n);
+}
+
+function showSlidesL(n) {
+  var i;
+  var slidesL = document.getElementsByClassName("mySlidesL");
+  var dotsL = document.getElementsByClassName("demoL");
+  var captionTextL = document.getElementById("captionL");
+  if (n > slidesL.length) {slideIndexL = 1}
+  if (n < 1) {slideIndexL = slidesL.length}
+  for (i = 0; i < slidesL.length; i++) {
+      slidesL[i].style.display = "none";
+  }
+  for (i = 0; i < dotsL.length; i++) {
+      dotsL[i].className = dotsL[i].className.replace(" active", "");
+  }
+  slidesL[slideIndexL-1].style.display = "block";
+  dotsL[slideIndexL-1].className += " active";
+  captionTextL.innerHTML = dotsL[slideIndexL-1].alt;
+}
+</script>
+
+   </div>   
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+    <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+   <div class="col-6">
+       <div class="container">
+  <div class="mySlidesK">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesK">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesK">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesK">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesK">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesK">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesK(-1)">❮</a>
+  <a class="next" onclick="plusSlidesK(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionK"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoK cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideK(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoK cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideK(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoK cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideK(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoK cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideK(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoK cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideK(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoK cursor" src="lside.jfif" style="width:100%" onclick="currentSlideK(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexK = 1;
+showSlidesK(slideIndexK);
+
+function plusSlidesK(n) {
+  showSlidesK(slideIndexK += n);
+}
+
+function currentSlideK(n) {
+  showSlidesK(slideIndexK = n);
+}
+
+function showSlidesK(n) {
+  var i;
+  var slidesK = document.getElementsByClassName("mySlidesK");
+  var dotsK = document.getElementsByClassName("demoK");
+  var captionTextK = document.getElementById("captionK");
+  if (n > slidesK.length) {slideIndexK = 1}
+  if (n < 1) {slideIndexK = slidesK.length}
+  for (i = 0; i < slidesK.length; i++) {
+      slidesK[i].style.display = "none";
+  }
+  for (i = 0; i < dotsK.length; i++) {
+      dotsK[i].className = dotsK[i].className.replace(" active", "");
+  }
+  slidesK[slideIndexK-1].style.display = "block";
+  dotsK[slideIndexK-1].className += " active";
+  captionTextK.innerHTML = dotsK[slideIndexK-1].alt;
+}
+</script>
+
+   </div>      
+<div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+ <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+ <div class="col-6">
+       <div class="container">
+  <div class="mySlidesM">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesM">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesM">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesM">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesM">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesM">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesM(-1)">❮</a>
+  <a class="next" onclick="plusSlidesM(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionM"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoM cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideM(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoM cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideM(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoM cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideM(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoM cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideM(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoM cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideM(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoM cursor" src="lside.jfif" style="width:100%" onclick="currentSlideM(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexM = 1;
+showSlidesM(slideIndexM);
+
+function plusSlidesM(n) {
+  showSlidesM(slideIndexM += n);
+}
+
+function currentSlideM(n) {
+  showSlidesM(slideIndexM = n);
+}
+
+function showSlidesM(n) {
+  var i;
+  var slidesM = document.getElementsByClassName("mySlidesM");
+  var dotsM = document.getElementsByClassName("demoM");
+  var captionTextM = document.getElementById("captionM");
+  if (n > slidesM.length) {slideIndexM = 1}
+  if (n < 1) {slideIndexM = slidesM.length}
+  for (i = 0; i < slidesM.length; i++) {
+      slidesM[i].style.display = "none";
+  }
+  for (i = 0; i < dotsM.length; i++) {
+      dotsM[i].className = dotsM[i].className.replace(" active", "");
+  }
+  slidesM[slideIndexM-1].style.display = "block";
+  dotsM[slideIndexM-1].className += " active";
+  captionTextM.innerHTML = dotsM[slideIndexM-1].alt;
+}
+</script>
+
+   </div>        
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+   <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+   <div class="col-6">
+       <div class="container">
+  <div class="mySlidesN">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesN">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesN">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesN">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesN">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesN">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesN(-1)">❮</a>
+  <a class="next" onclick="plusSlidesN(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionN"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoN cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideN(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoN cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideN(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoN cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideN(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoN cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideN(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoN cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideN(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoN cursor" src="lside.jfif" style="width:100%" onclick="currentSlideN(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexN = 1;
+showSlidesN(slideIndexN);
+
+function plusSlidesN(n) {
+  showSlidesN(slideIndexN += n);
+}
+
+function currentSlideN(n) {
+  showSlidesN(slideIndexN = n);
+}
+
+function showSlidesN(n) {
+  var i;
+  var slidesN = document.getElementsByClassName("mySlidesN");
+  var dotsN = document.getElementsByClassName("demoN");
+  var captionTextN = document.getElementById("captionN");
+  if (n > slidesN.length) {slideIndexN = 1}
+  if (n < 1) {slideIndexN = slidesN.length}
+  for (i = 0; i < slidesN.length; i++) {
+      slidesN[i].style.display = "none";
+  }
+  for (i = 0; i < dotsN.length; i++) {
+      dotsN[i].className = dotsN[i].className.replace(" active", "");
+  }
+  slidesN[slideIndexN-1].style.display = "block";
+  dotsN[slideIndexN-1].className += " active";
+  captionTextN.innerHTML = dotsN[slideIndexN-1].alt;
+}
+</script>
+
+   </div>        
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+    <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+     <div class="col-6">
+       <div class="container">
+  <div class="mySlidesO">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesO">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesO">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesO">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesO">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesO">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesO(-1)">❮</a>
+  <a class="next" onclick="plusSlidesO(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionO"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoO cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideO(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoO cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideO(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoO cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideO(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoO cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideO(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoO cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideO(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoO cursor" src="lside.jfif" style="width:100%" onclick="currentSlideO(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexO = 1;
+showSlidesO(slideIndexO);
+
+function plusSlidesO(n) {
+  showSlidesO(slideIndexO += n);
+}
+
+function currentSlideO(n) {
+  showSlidesO(slideIndexO = n);
+}
+
+function showSlidesO(n) {
+  var i;
+  var slidesO = document.getElementsByClassName("mySlidesO");
+  var dotsO = document.getElementsByClassName("demoO");
+  var captionTextO = document.getElementById("captionO");
+  if (n > slidesO.length) {slideIndexO = 1}
+  if (n < 1) {slideIndexO = slidesO.length}
+  for (i = 0; i < slidesO.length; i++) {
+      slidesO[i].style.display = "none";
+  }
+  for (i = 0; i < dotsO.length; i++) {
+      dotsO[i].className = dotsO[i].className.replace(" active", "");
+  }
+  slidesO[slideIndexO-1].style.display = "block";
+  dotsO[slideIndexO-1].className += " active";
+  captionTextO.innerHTML = dotsO[slideIndexO-1].alt;
+}
+</script>
+
+   </div> 
+    <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+ <div class="col-6" style="background-color:ghostwhite;">
+         <div>
+             <p>lay you ads here</p>
+         </div>
+    </div> 
+   <div class="col-6">
+       <div class="container">
+  <div class="mySlidesP">
+    <div class="numbertext">1 / 6</div>
+    <img  src="benz2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesP">
+    <div class="numbertext">2 / 6</div>
+    <img src="lexus1.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesP">
+    <div class="numbertext">3 / 6</div>
+    <img src="lex_int2.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesP">
+    <div class="numbertext">4 / 6</div>
+    <img src="LEXUS_INTERIOR.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+
+  <div class="mySlidesP">
+    <div class="numbertext">5 / 6</div>
+    <img src="lrug.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <div class="mySlidesP">
+    <div class="numbertext">6 / 6</div>
+    <img src="lside.jfif" style="width:100%">
+       <div class="img-text-block">
+    <p class="ictheader">Lexus rx350</p> 
+    <p class="ictprice">#price</p>
+    <button class="ictbutton"><a class="ictblink" href="#">Order</a></button>
+    <button class="ictbutton"><a class="ictblink" href="#">View more</a></button>
+     
+    </div> 
+  </div>
+    
+  <a class="prev" onclick="plusSlidesP(-1)">❮</a>
+  <a class="next" onclick="plusSlidesP(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="captionP"></p>
+  </div>
+
+  <div class="gs">
+    <div class="column">
+      <img class="demoP cursor" src="benz2.jfif" style="width:100%" onclick="currentSlideP(1)" alt="front 1">
+    </div>
+    <div class="column">
+      <img class="demoP cursor" src="lexus1.jfif" style="width:100%" onclick="currentSlideP(2)" alt="front 2">
+    </div>
+    <div class="column">
+      <img class="demoP cursor" src="lex_int2.jfif" style="width:100%" onclick="currentSlideP(3)" alt="interirior 1">
+    </div>
+    <div class="column">
+      <img class="demoP cursor" src="LEXUS_INTERIOR.jfif" style="width:100%" onclick="currentSlideP(4)" alt="jaz board">
+    </div>
+    <div class="column">
+      <img class="demoP cursor" src="lrug.jfif" style="width:100%" onclick="currentSlideP(5)" alt="rug">
+    </div>    
+    <div class="column">
+      <img class="demoP cursor" src="lside.jfif" style="width:100%" onclick="currentSlideP(6)" alt="side">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndexP = 1;
+showSlidesP(slideIndexP);
+
+function plusSlidesP(n) {
+  showSlidesP(slideIndexP += n);
+}
+
+function currentSlideP(n) {
+  showSlidesP(slideIndexP = n);
+}
+
+function showSlidesP(n) {
+  var i;
+  var slidesP = document.getElementsByClassName("mySlidesP");
+  var dotsP = document.getElementsByClassName("demoP");
+  var captionTextP = document.getElementById("captionP");
+  if (n > slidesP.length) {slideIndexP = 1}
+  if (n < 1) {slideIndexP = slidesP.length}
+  for (i = 0; i < slidesP.length; i++) {
+      slidesP[i].style.display = "none";
+  }
+  for (i = 0; i < dotsP.length; i++) {
+      dotsP[i].className = dotsP[i].className.replace(" active", "");
+  }
+  slidesP[slideIndexP-1].style.display = "block";
+  dotsP[slideIndexP-1].className += " active";
+  captionTextP.innerHTML = dotsP[slideIndexP-1].alt;
+}
+</script>
+
+   </div>     
+  <div class="col-7 right" style="background-color:ghostwhite;  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);">
+    <div class="aside" >
+     <div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="100px" height="45px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="agric1.jfif" alt="Forest" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="agric1.jfif" alt="Mountains" width="110px" height="35px" >
+  </a>
+  <div class="desc">discription</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="agric1.jfif" alt="Cinque Terre" width="110px" height="35px">
+  </a>
+  <div class="desc">discription</div>
+</div>
+
+<div class="gallery">
+      <a class="leftgrid"target="_blank" href="img_forest.jpg">
+        <img src="agric1.jfif" alt="Forest" width="110px" height="35px">
+      </a>
+      <div class="desc">discription</div>
+     </div>
+
+   </div>
+</div>
+
+    </div>
+    
+    
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+   
+</body>
+    </html>

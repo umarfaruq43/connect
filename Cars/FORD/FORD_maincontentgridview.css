@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.p {
+  width: 75%;
+  float: left;
+  border: 1px solid black;
+  padding: 96px;
+  background-size: cover;
+
+}
+
+.q {margin-bottom: inherit;
+  width: 25%;
+  float: left;
+  border: 1px solid black;
+}
+
+.psub{
+    font-size: 22.1px;
+   
+}
